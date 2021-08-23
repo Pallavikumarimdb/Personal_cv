@@ -1,10 +1,33 @@
 body{
   margin: 0;
-}
-h1{
-  margin-top: 0;
+
 }
 
-div{
-  background-color: #E4F9F5;
+.headerdiv{
+  background-color: #000000;
+  height: 50px;
+}
+.table1{
+ padding-left: 40%;
+ padding-top: 10px;
+}
+.table1th{
+  text-align: center;
+  padding: 3px 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.a1{
+  color: #FFFFFF;
+  font-size: 15px;
+  text-decoration: none;
+}
+.middlepage{
+  height:500px;
+  background-color:#110F0F;
+}
+
+
+.social{
+  background-color: #000000;
+  height: 213px;
 }
