@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pallavi's web</title>
     <link rel="stylesheet" href="csspage.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.io.png">
+    <link href="MobileStyleSheet.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
   </head>
   <body>
     <div class="headerdiv">
@@ -21,10 +23,25 @@
   </table>
 </div>
 <div class="middlepage">
-  <table>
+  <table class="table2">
     <tr>
-      <td></td>
-      <td></td>
+      <td>
+        <!--nested table start -->
+        <table>
+        <tr class="nestedrow1">
+        <td>
+        <b>  HELLO & WELCOME </b>
+        </td>
+      </tr>
+      <tr class="nestedrow2">
+       <td class="nesrow2td">
+         <br />I'm Pallavi Kumari, a programmer and third year <b>B.tech IT </b>Student<br />@ Sathyabama Instotute of Science & Technology Chennai
+       </td>
+      </tr>
+      <!--nested table end -->
+    </table>
+  </td>
+      <td><img class="profimg" src="assets/profimg3.png" alt="profile picture"></td>
     </tr>
   </table>
 </div>
