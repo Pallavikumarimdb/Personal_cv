@@ -8,10 +8,6 @@ body{
   background-color: #1F2235;
   height: 10%;
   width:100%;
-   -webkit-box-shadow: 0px 18px 40px -30px #23263a;
-   box-shadow: 0px 18px 40px -30px #23263a;
-   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
-   animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
    position: fixed;
 }
 .table1{
@@ -21,14 +17,14 @@ body{
 }
 .table1th{
   text-align: center;
-  padding: 3px 30px;
+  padding: 3px 20px;
+  font-weight: 800;
   font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px 2px #808080;
 
 }
 .a1{
   color: #FFFFFF;
-  font-size: 15px;
+
   text-decoration: none;
 
 }
@@ -40,18 +36,15 @@ body{
 .table2{
   padding-left:10%;
   padding-top: 5%;
-
-
 }
 
-.social{
-  background-color: #101011;
-  height: 200px;
-
+.nestedtab{
+  padding-top: 20%;
 }
 
 
 .nestedrow1{
+  margin-top: 100px;
   text-align: center;
   font-size:3vw;
   font-family: "Arial Black", serif;
@@ -59,7 +52,6 @@ body{
   color: white;
   padding-left: 50%;
 }
-
 
 .nestedrow2{
   color: white;
@@ -70,12 +62,46 @@ body{
 }
 
 .nesrow2td{
-  padding-left: 8%;
+  padding-left: 2%;
 }
+
+.nestedrow3{
+  height: 100px;
+}
+
+.btn{
+  color: #cc6600;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 150px;
+  height: 40px;
+  font-family: 'Raleway';
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 8px 8px 12px rgba(0,0,0,0.25),
+                -8px -8px 12px rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 50px 50px 50px #cc0000  inset,
+                50px 50px 50px  #cc0000  inset;
+
+}
+
 
 .profimg{
   height: 500px;
   width: 500px;
   padding-left: 25%;
+
+}
+
+.social{
+  background-color: #101011;
+  height: 200px;
 
 }
