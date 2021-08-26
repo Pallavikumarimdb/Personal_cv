@@ -3,12 +3,16 @@ body{
   width: 98.9vw;
 
 }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 .headerdiv{
   background-color: #1F2235;
   height: 10%;
   width:100%;
    position: fixed;
+   z-index:1;
 }
 .table1{
  padding-left: 40%;
@@ -28,14 +32,23 @@ body{
   text-decoration: none;
 
 }
-.middlepage{
-  height:650px;
+
+.a1:hover {
+  color: #cc0000;
+
+}
+
+.homepage{
+  width: 100%;
+  height:765px;
   background-color:#24263B;
 }
 
-.table2{
-  padding-left:10%;
+ .table2{
+  padding-left:5%;
+  padding-right: 12%;
   padding-top: 5%;
+
 }
 
 .nestedtab{
@@ -46,23 +59,27 @@ body{
 .nestedrow1{
   margin-top: 100px;
   text-align: center;
-  font-size:3vw;
-  font-family: "Arial Black", serif;
+  font-size:4vw;
+  font-family: "Poppins";
   text-shadow: 10px 10px 10px #001133;
   color: white;
   padding-left: 50%;
 }
 
 .nestedrow2{
-  color: white;
-  font-size: 1vw;
-  font-family: "Arial Rounded MT Bold", serif;
+
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+   color: gray;
   text-shadow: 5px 5px 5px #000011;
 
 }
 
 .nesrow2td{
-  padding-left: 2%;
+  padding-left: 5%;
+  display: inline-block;
+  width: 80%;
+  word-spacing: 2px;
 }
 
 .nestedrow3{
@@ -70,14 +87,15 @@ body{
 }
 
 .btn{
+  z-index:0;
   color: #cc6600;
   transform: translate(-50%, -50%);
   display: block;
-  margin-left: 35%;
+  margin-left: 40%;
   margin-top: 10%;
   width: 150px;
   height: 40px;
-  font-family: 'Raleway';
+  font-family:'Raleway';
   font-size: large;
   border-radius: 20px;
   border: none;
@@ -87,21 +105,123 @@ body{
 }
 
 .btn:hover {
+  z-index:0;
   box-shadow: 50px 50px 50px #cc0000  inset,
-                50px 50px 50px  #cc0000  inset;
+                50px 50px 50px #cc0000  inset;
+
+}
+.btndiv{
+  z-index:0;
 
 }
 
 
 .profimg{
-  height: 500px;
-  width: 500px;
-  padding-left: 25%;
+  height: 600PX;
+  width: 600PX;
 
 }
 
-.social{
-  background-color: #101011;
-  height: 200px;
+
+/*  ABOUT ME SECTION */
+
+
+
+.aboutpage{
+  width: 100%;
+  height:765px;
+  background-color: #1F2235;
+}
+
+.abouttitle{
+  color: #ffffff;
+}
+
+.abouttitle1{
+  text-align: center;
+  padding-top: 5%;
+  font-size:2vw;
+  font-family: "Poppins";
+  text-shadow: 4px 4px 4px #001133;
+  color: #cc0000;
+
+}
+.hoverh2{
+  display: inline-block;
+}
+.hoverh2:hover{
+  color: white;
+}
+
+.abouttitle2{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 11%;
+  font-size: 25px;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-weight: 400px;
+  word-spacing: 4px;
+
+}
+
+.abouttitle3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+ color: #6c757d;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 10%;
+-webkit-ext-size-adjust:auto;
+}
+
+.abouttab{
+  margin-left: 7%;
+}
+
+
+.data1{
+  width: 7%;
+  height:100%;
+}
+
+.data2{
+
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  padding-left:3%;
+  padding-right:3%;
+
+}
+.hel1{
+ --font-family-monospace: "Liberation Mono","Courier New",monospace;
+  font-weight: bold;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top: 10%;
+
+
+}
+
+ .desc{
+
+  color: #6c757d;
+  padding-left:10%;
+  padding-right:25%;
+  padding-bottom: 10%;
+-webkit-ext-size-adjust:auto;
+
+
+}
+
+
+
+.pfp {
+  width: 320px;
+  height: 320px;
+  border: 4px solid #24263B;
+  border-radius: 50% 50% 50% 50%;
+  position: center;
+  margin-top:50%;
+
 
 }
