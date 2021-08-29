@@ -1,37 +1,43 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: montserrat;
 }
-nav{
+
+nav {
   position: fixed;
   background: #0082e6;
   height: 80px;
   width: 100%;
   z-index: 2;
 }
-label.logo{
+
+label.logo {
   color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -40,11 +46,13 @@ nav ul li a{
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
-a.active,a:hover{
+
+a.active, a:hover {
   background: #1b9bff;
   transition: .5s;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -53,24 +61,29 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-@media (max-width: 1000px){
-  label.logo{
+
+@media (max-width: 1000px) {
+  label.logo {
     font-size: 30px;
     padding-left: 30px;
     padding-right: 0;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media (max-width: 1100px){
-  .checkbtn{
+
+@media (max-width: 1100px) {
+  .checkbtn {
     display: block;
   }
-  ul{
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -80,43 +93,44 @@ a.active,a:hover{
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 20px;
   }
-  a:hover,a.active{
+
+  a:hover, a.active {
     background: none;
     color: #0082e6;
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
   }
 }
-section{
+
+section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
 
 /* ============== HOME PAGE ============== */
-
-
-
-.home-body{
- width: 100%;
- height: auto;
- background-color:#24263B;
- padding-top: 6%;
-
-
+.home-body {
+  width: auto;
+  height: auto;
+  background-color: #24263B;
+  padding-top: 6%;
 }
-.body-flex{
-  width: 100%;
-  height:auto;
+
+.body-flex {
+  width: auto;
+  height: auto;
   background-color: #24263B;
   display: flex;
   flex-direction: row;
@@ -125,205 +139,204 @@ section{
   flex-flow: wrap;
 }
 
-.home-flex{
-width: 45%;
-height: auto;
-background-color: #24263B;
-position: relative;
-margin: 20px;
-z-index: 0;
+.home-flex {
+  width: 45%;
+  height: auto;
+  background-color: #24263B;
+  position: relative;
+  margin: 20px;
+  z-index: 0;
+  left: 5%;
 }
 
 /*  Add responsive media quarie  */
-
-@media screen and (max-width:1200px){
-  .home-flex{
+@media screen and (max-width:1200px) {
+  .home-flex {
     flex-basis: auto;
-    width: 100% !important;
-     padding: 0;
-     margin: 0;
-     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-.home-flex .profimg{
-  height:360px;
-  width:360px;
-  flex-basis: auto;
-  position: relative;
-  right: 40px;
-  padding:0;
-  margin: 0;
-  display: inline-block;
-}
-.nestedrow1{
-  font-size:3rem;
-  padding: 0;
-  margin: 0;
-}
-}
-
-@media screen and (max-width:1100px) {
-  .home-flex{
-    width: 100% !important;
-    flex-basis: auto;
-    background-color: #24263B;
+    width: 100%;
+    ;
     padding: 0;
     margin: 0;
-
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .home-flex .profimg{
-    height:360px;
-    width:360px;
+
+  .home-flex .profimg {
+    height: 100%;
+    width: 100%;
+    ;
     flex-basis: auto;
     position: relative;
-    right: auto;
-    padding:0;
+    right: 40px;
+    padding: 0;
     margin: 0;
     display: inline-block;
   }
 
+  .home-flex .nestedrow1 {
+    font-size: 360%;
+    margin-left: 0;
+  }
 }
 
+@media screen and (max-width:1100px) {
+  .home-flex {
+    width: 100%;
+    flex-basis: auto;
+    background-color: #24263B;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .home-flex .profimg {
+    height: 100%;
+    width: 100% flex-basis: auto;
+    position: relative;
+    right: auto;
+    padding: 0;
+    right: 40px;
+    margin: 0;
+    display: inline-block;
+  }
 
+  .home-flex .nestedrow1 {
+    font-size: 360%;
+    margin-left: 0;
+  }
+}
 
-
-
-
-
-.profimg{
+.profimg {
   height: 42vw;
   width: 42vw;
   align-items: center;
   display: inline-block;
-
 }
 
-.nestedrow1{
-  font-size:3.8rem;
+.nestedrow1 {
+  font-size: 400%;
   font-family: "Poppins";
   text-shadow: 10px 10px 10px #001133;
   color: white;
-    margin-top: 12rem;
-    margin-left: 1rem;
-    margin-bottom: 0;
+  margin-top: 12rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.nesrow2td{
+.nesrow2td {
   display: inline-block;
-    word-spacing: 2px;
+  word-spacing: 2px;
   font-size: 17px;
-font-family: "Montserrat", sans-serif;
- color: gray;
-text-shadow: 5px 5px 5px #000011;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  text-shadow: 5px 5px 5px #000011;
   position: relative;
-  margin-top:1rem;;
+  margin-top: 1rem;
+  ;
   margin-left: 5%;
-  margin-right: 10%;
+  margin-right: 5%;
+  text-align: center;
 }
 
-.btn{
+.btn {
   display: inline-block;
   position: relative;
-  margin-top:60px;;
-  margin-left: 40%;
+  margin-top: 60px;
+  margin-left: 45%;
   margin-right: 10rem;
-  z-index:0;
+  z-index: 0;
   color: #cc6600;
   transform: translate(-50%, -50%);
   display: block;
   width: 150px;
   height: 40px;
-  font-family:'Raleway';
+  font-family: 'Raleway';
   font-size: large;
   border-radius: 20px;
   border: none;
-  box-shadow: 8px 8px 12px rgba(0,0,0,0.25),
-                -8px -8px 12px rgba(255,255,255,0.3);
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25),
+    -8px -8px 12px rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
 .btn:hover {
-  z-index:0;
-  box-shadow: 50px 50px 50px #cc0000  inset,
-                50px 50px 50px #cc0000  inset;
-
+  z-index: 0;
+  box-shadow: 50px 50px 50px #cc0000 inset,
+    50px 50px 50px #cc0000 inset;
 }
-
-
 
 /* ============== ABOUT PAGE ============== */
-
-.about-body{
- width: 100%;
- height: auto;
- background-color:#1F2235;
- color: #ffffff;
- padding-top: 6%;
-
-
-}
-.aboutcontainer-flex{
+.about-body {
   width: 100%;
-  height:auto;
+  height: auto;
+  background-color: #1F2235;
+  color: #ffffff;
+  padding-top: 6%;
+}
+
+.aboutcontainer-flex {
+  width: 100%;
+  height: auto;
   padding-top: 100px;
-  background-color:#1F2235;
+  background-color: #1F2235;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-
   display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
-    flex-direction: row;
-
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    justify-content: center;
-
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    align-items: center;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
 }
 
-.about-flex{
-width: 700px;
-height: 500px;
-background-color:#1F2235;
-position: relative;
-margin: 10px;
-z-index: 0;
-
+.about-flex {
+  width: 630px;
+  height: 500px;
+  background-color: #1F2235;
+  position: relative;
+  margin: 10px;
+  z-index: 0;
 }
 
 /*  Add responsive media quarie  */
-
-@media screen and (max-width:1200px){
-  .home-flex{
+@media screen and (max-width:1200px) {
+  .home-flex {
     width: 100%;
+    flex-basis: auto;
     padding: 0;
     margin: 0;
+  }
 
+  .about-body {
+    flex-basis: auto;
+    width: 100%;
+  }
 
+  .home-flex .hel1 {
+    position: relative;
+    padding-top: 0;
   }
 }
 
 @media screen and (max-width:1100px) {
-  .home-flex{
+  .home-flex {
     width: 100%;
     flex-basis: auto;
     background-color: #24263B;
@@ -331,83 +344,81 @@ z-index: 0;
     margin: 0;
   }
 
+  .about-body {
+    width: 105%;
+    flex-basis: auto;
+  }
+
+  .home-flex .hel1 {
+    position: relative;
+    padding-top: 0;
+  }
 }
 
-
-
-.abouttitle1{
+.abouttitle1 {
   padding-top: 80px;
   text-align: center;
   height: 4rem;
-  font-size:2rem;
+  font-size: 2rem;
   font-family: "Poppins";
   text-shadow: 4px 4px 4px #001133;
   color: #cc0000;
-
 }
-.hoverh2{
+
+.hoverh2 {
   display: inline-block;
 }
-.hoverh2:hover{
+
+.hoverh2:hover {
   color: white;
 }
-
 
 .pfp {
   width: 20rem;
   height: 20rem;
   position: relative;
-  top:20px;
+  top: 20px;
   left: 3vw;
   background-size: contain;
   border: 4px solid #24263B;
-    border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
   margin: auto;
-
 }
 
-
-.data1{
-display: block;
-font-family: "Gill Sans Extrabold", sans-serif;
-font-size:2rem;
-font-weight: 400px;
-color: white;
+.data1 {
+  display: block;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 2rem;
+  font-weight: 400px;
+  color: white;
   margin-left: 4vw;
   margin-right: 0;
   margin-bottom: 0;
   padding: 0;
-
 }
 
-.data2{
+.data2 {
   color: #6c757d;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-  font-size:1rem;
-
+  font-size: 1rem;
+  position: relative;
+  right: 4%;
 }
 
-
-.hel1{
-
-  --font-family-monospace: "Liberation Mono","Courier New",monospace;
+.hel1 {
+  --font-family-monospace: "Liberation Mono", "Courier New", monospace;
   font-weight: bold;
-
-  padding-right:10%;
-  padding-top: 15%;
-
+  padding-left: 1rem;
+  padding-right: 10%;
+  padding-top: 5vw;
 }
 
-
-.desc{
-
+.desc {
   color: #6c757d;
-  padding-left:5px;
+  padding-left: 5px;
   padding-top: 5%;
+  padding-right: 5px;
   padding-bottom: 10%;
--webkit-ext-size-adjust:auto;
-
-
-
+  -webkit-ext-size-adjust: auto;
 }
