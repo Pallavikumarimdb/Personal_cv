@@ -1,10 +1,10 @@
-Html, body
-{
-   max-width: 100%;
-   margin: 0;
- width: 100%;
-   overflow-x: hidden;
+Html, body {
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -18,14 +18,12 @@ body {
 }
 
 nav {
-
   background-color: #0082e6;
   height: 80px;
   width: 100%;
   z-index: 2;
   position: fixed;
 }
-
 
 label.logo {
   color: white;
@@ -90,8 +88,8 @@ a.active, a:hover {
 @media (max-width: 1100px) {
   .checkbtn {
     display: block;
-
   }
+
   ul {
     position: fixed;
     width: 100%;
@@ -122,7 +120,6 @@ a.active, a:hover {
     left: 0;
   }
 }
-
 
 /* ============== HOME PAGE ============== */
 .home-body {
@@ -228,7 +225,8 @@ a.active, a:hover {
   color: white;
   margin-top: 12rem;
   text-align: center;
-  margin-right: 10px;;
+  margin-right: 10px;
+  ;
 }
 
 .nesrow2td {
@@ -286,7 +284,6 @@ a.active, a:hover {
   height: auto;
   padding-top: 100px;
   padding-left: 12px;
-
   background-color: #1F2235;
   display: flex;
   flex-direction: row;
@@ -332,16 +329,18 @@ a.active, a:hover {
     flex-basis: auto;
     width: 100%;
   }
-  .about-flex .pfp{
+
+  .about-flex .pfp {
     height: 18rem;
     width: 18rem;
   }
+
   .home-flex .hel1 {
     position: relative;
     padding-top: 0;
   }
 
-  .about-body .data1{
+  .about-body .data1 {
     margin-top: 5rem;
   }
 }
@@ -359,13 +358,15 @@ a.active, a:hover {
     width: 105%;
     flex-basis: auto;
   }
-.about-flex .pfp{
-  height: 18rem;
-  width: 18rem;
-}
-.about-body .data1{
-  margin-top: 5rem;
-}
+
+  .about-flex .pfp {
+    height: 18rem;
+    width: 18rem;
+  }
+
+  .about-body .data1 {
+    margin-top: 5rem;
+  }
 
   .home-flex .hel1 {
     position: relative;
@@ -442,12 +443,8 @@ a.active, a:hover {
   -webkit-ext-size-adjust: auto;
 }
 
-
-
 /* ============== SKILLS PAGE ============== */
-
-
-.skills-body{
+.skills-body {
   width: 100%;
   height: auto;
   background-color: #24263B;
@@ -455,14 +452,12 @@ a.active, a:hover {
   padding-top: 0;
 }
 
-
-
 .skillscontainer-flex {
   width: 100%;
   height: auto;
   padding-top: 100px;
   padding-left: 12px;
-padding-right: 12px;
+  padding-right: 12px;
   background-color: #24263B;
   display: flex;
   flex-direction: row;
@@ -488,7 +483,7 @@ padding-right: 12px;
 
 .skills-flex {
   width: 630px;
-  height: auto;
+  height: 750px;
   background-color: #24263B;
   position: relative;
   margin: 10px;
@@ -508,13 +503,13 @@ padding-right: 12px;
     flex-basis: auto;
     width: 100%;
   }
-
 }
 
 @media screen and (max-width:1100px) {
   .skillscontainer-flex {
     text-align: center;
   }
+
   .home-flex {
     width: 100%;
     flex-basis: auto;
@@ -528,72 +523,65 @@ padding-right: 12px;
     flex-basis: auto;
   }
 
-
   .home-flex .hel1 {
     position: relative;
     padding-top: 0;
   }
-
 }
 
-
-
-.skillsimg{
+.skillsimg {
   width: 10rem;
   height: 10rem;
 }
 
-.skilltitle1{
-text-align: center;
-height: 4rem;
-font-size: 2rem;
-font-family: "Poppins";
-text-shadow: 4px 4px 4px #001133;
-color: #cc0000;
-padding-top: 5%;
-}
-
-.softech-text{
-  font-size: 300%;
-}
-
-
-.coading-text{
-  padding-top: 100px;
-  padding-left: 50px;
-  border: 2px dotted powderblue;
+.skilltitle1 {
+  text-align: center;
+  height: 4rem;
+  font-size: 2rem;
+  font-family: "Poppins";
+  text-shadow: 4px 4px 4px #001133;
+  color: #cc0000;
+  padding-top: 5%;
 }
 
 .meter {
   text-align: right;
-    height: 15px;
-    position: relative;
-    background: #f3efe6;
-    overflow: hidden;
-    width: 80%;
-    border-radius: 4px;
-    box-sizing: border-box;
+  height: 10px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+  width: 85%;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .meter span {
-    display: block;
-    height: 100%;
+  display: block;
+  height: 100%;
 }
 
 .progress {
-    background-color:#ff0000;
-    -webkit-animation: progressBar 6s ease-in-out;
-    -webkit-animation-fill-mode:both;
-    -moz-animation: progressBar 6s ease-in-out;
-    -moz-animation-fill-mode:both;
+  background-color: #ff2cd0;
+  -webkit-animation: progressBar 6s ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation: progressBar 6s ease-in-out;
+  -moz-animation-fill-mode: both;
+}
+
+.prog-align {
+  padding-left: 20%;
 }
 
 @-webkit-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+
   width: 0;
-
-
 
   100% {
     width: 100%;
@@ -615,12 +603,17 @@ padding-top: 5%;
     background: #660000;
   }
 }
-
 }
 
 @-moz-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+
   25% {
     width: 10%;
     background: #ff0000;
@@ -636,7 +629,6 @@ padding-top: 5%;
     background: #00ff00;
   }
 
-
   100% {
     width: 100%;
     background: #660000;
@@ -644,45 +636,38 @@ padding-top: 5%;
 }
 }
 
-
-
-
-
-
 .img-flex figure img {
   height: 100px;
-  width:100%;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .img-flex figure:hover img {
   height: 100px;
-  width:100%;
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  width: 100%;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
-.achimg{
-  height: 50px;
-  width:70%;
+.achimg {
+  height: 70px;
+  width: 80%;
   padding: 0;
-  margin-left: 10px;
   margin-right: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 
 .imgcontainer-flex {
   margin-left: 12%;
   margin-right: 30px;
   width: 500px;
   height: auto;
-  padding-top:0;
-padding-right:0;
+  padding-top: 0;
+  padding-right: 0;
   background-color: #24263B;
   display: flex;
   flex-direction: row;
@@ -692,137 +677,142 @@ padding-right:0;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
 }
 
 .img-flex {
-  margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 2%;
   width: 35%;
   text-align: center;
-  height:auto;
+  height: auto;
   background-color: #24263B;
   position: relative;
   z-index: 0;
 }
 
-
-
-
-@media screen and (max-width:700px){
-  .img-flex{
-    margin: 5%;
-    width: 200px;
-  }
-  .imgcontainer-flex {
-    margin-left: 12%;
-    margin-right: 30px;
-  }
-  .achimg{
-    height: auto;
-    width:100px;
-    padding: 0;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-}
-
-@media screen and (max-width:1100px){
-  .imgcontainer-flex {
-    width: 650px;
-    height: auto;
-  }
-  .img-flex{
-    margin: 3%;
-    width: 270px;;
-  }
-  .imgcontainer-flex {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10px;
-  }
-  .achimg{
-    height:150px;;
-    width:150px;
-    padding: 0;
-
-  }
-
-
-}
-
-/*
-  Add responsive media quarie
-@media screen and (max-width:500px) {
+@media screen and (max-width:690px) {
   .img-flex {
-    width: 100%;
-    flex-basis: auto;
+    margin: 2% 5% 2% 5%;
+    width: 110px;
+  }
+
+  .imgcontainer-flex {
+    margin-left: 15%;
+  }
+
+  .img-flex .achimg {
+    height: 60px;
+    ;
+    width: 60px;
     padding: 0;
-    margin: 0;
   }
 }
 
-@media screen and (max-width:400px) {
-  .img-flex {
-    width: 100%;
-    flex-basis: auto;
-    background-color: #24263B;
-    padding: 0;
-    margin: 0;
-  }
-
-}
-
-
-*/
-
-
-
-
-
-
-/*
-
-.table-div{
-  align-items: center;
-  padding-top: 40px;
-}
-.skills-table{
-
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.skills-table td{
-  padding: 0;
-  padding: 0;
-  margin: 0;
-}
-table {
-
-  padding: 0;
-  margin: 0;
-
-}
-
-th {
-  background-color: #4287f5;
+.softech-text {
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 1.5rem;
   color: white;
-  padding: 0;
-  margin: 0;
+  margin-left: 4vw;
+  margin-top: 2rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  border: 3px dashed #20bcd5;
+  padding: 5px;
 }
 
-th,
-td {
-  width: 150px;
-  height: 80px;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+@media screen and (max-width:1000px) {
+  .softech-text {
+    display: inline-block;
+    padding: 5px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+    border: 3px dashed #20bcd5;
+  }
 }
 
-*/
+.coading-text {
+  display: inline-block;
+  padding: 5px;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 30%;
+  border: 3px dashed #20bcd5;
+}
+
+@media screen and (max-width:1000px) {
+  .coading-text {
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 0.5vw;
+    margin-top: 2rem;
+    margin-right: 5vw;
+    margin-bottom: 0;
+    display: inline-block;
+    border: 3px dashed #20bcd5;
+    padding: 5px;
+  }
+}
+
+.softech-text1 {
+  color: #6c757d;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  margin-left: 5%;
+  margin-right: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.softech-text2 {
+  color: #6c757d;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 1rem;
+  position: relative;
+  margin-left: 25%;
+  margin-right: 8%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width:1000px) {
+  .softech-text1 {
+    color: #6c757d;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    font-size: 1rem;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 25%;
+  }
+
+  @media screen and (max-width:1000px) {
+    .softech-text2 {
+      text-align: justify;
+      color: #6c757d;
+      font-family: "Montserrat", sans-serif;
+      display: inline-block;
+      font-size: 1rem;
+      position: relative;
+      margin-left: 10%;
+      margin-right: 15%;
+    }
+  }
+
+  @media screen and (max-width:1000px) {
+    .prog-align {
+      padding-left: 10%;
+    }
+  }
